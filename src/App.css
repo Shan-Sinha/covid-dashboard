@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.contact-form {
+    @apply max-w-sm mx-auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .form-control {
+    @apply px-3 py-2 rounded-md border focus:outline-none focus:ring-1 focus:ring-blue-500;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .label {
+    @apply inline-block mr-2 font-medium;
   }
-}
+  
+  .checkbox-container {
+    @apply flex items-center;
+  }
+  
+  .checkbox {
+    @apply mr-2 h-5 w-5 rounded-full border focus:ring-1 focus:ring-blue-500;
+  }
+  
+  .checkbox:checked {
+    @apply bg-blue-500;
+  }
+  .contact-details {
+    @apply max-w-sm mx-auto px-4 py-3 rounded-md border shadow-md;
+  }
+  
+  .contact-details h2 {
+    @apply text-xl font-medium mb-4;
+  }
+  
+  .edit-form {
+    @apply hidden;
+  }
+  
+  .edit-form.active {
+    @apply block;
+  }
+  
+  .form-control {
+    @apply px-3 py-2 rounded-md border focus:outline-none focus:ring-1 focus:ring-blue-500 mb-3 w-full;
+  }
+  
+  .label {
+    @apply inline-block mr-2 font-medium mb-1;
+  }
+  
+  .radio-container {
+    @apply flex items-center mb-3;
+  }
+  
+  .radio {
+    @apply mr-2 h-5 w-5 rounded-full border focus:ring-1 focus:ring-blue-500;
+  }
+  
+  .radio:checked {
+    @apply bg-blue-500;
+  }
+  
+  .button-container {
+    @apply flex justify-end;
+  }
+  
+  .button {
+    @apply px-3 py-1 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 mr-2;
+  }
+  
+  .delete-button {
+    @apply bg-red-500 text-white hover:bg-red-700;
+  }
+  
+  .save-button {
+    @apply bg-blue-500 text-white hover:bg-blue-700;
+  }
+  .contact-list {
+    @apply max-w-sm mx-auto px-4 py-3 rounded-md border shadow-md;
+  }
+  
+  .contact-list h2 {
+    @apply text-xl font-medium mb-4;
+  }
+  
+  .contact-item {
+    @apply flex justify-between items-center py-2 border-b;
+  }
+  
+  .contact-item:last-child {
+    @apply border-b-0;
+  }
+  
+  .contact-name,
+  .contact-phone {
+    @apply flex-grow;
+  }
+  
+  .view-details-button {
+    @apply px-3 py-1 rounded-md bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500;
+  }
+  
+   
